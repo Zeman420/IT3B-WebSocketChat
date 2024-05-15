@@ -27,5 +27,7 @@ namespace IT3B_Chat.Server
             MessagesListBox.Items.Add(newMessage);
             NewMessageTextBox.Text = "";
         }
+
+       
     }
 }

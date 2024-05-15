@@ -12,14 +12,15 @@
         <Border Grid.Row="0"  BorderThickness="1" Margin="-12,10,-1,1" Padding="10">
             <StackPanel Margin="1,1,-10,-11">
                 <TextBlock Text="Zprávy od klientů" FontWeight="Bold" Width="794"/>
-                
+
 
             </StackPanel>
         </Border>
         <TextBlock TextWrapping="Wrap" Text="připojení uživatelé" Margin="627,21,0,394"/>
         <ListBox  Margin="628,49,7,81"/>
         <ListBox x:Name="MessagesListBox" Height="302" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="3,49,186,83"/>
-        <Button x:Name="msgBtn" Content="Poslat zprávu" Margin="677,361,9,15" Click="msgBtn_Click"/>
-        <TextBox x:Name="NewMessageTextBox" TextWrapping="Wrap" Text="" Margin="8,360,130,13"/>
+        <Button x:Name="msgBtn" Content="Poslat zprávu" Margin="678,367,8,9" Click="msgBtn_Click"/>
+        <TextBox x:Name="NewMessageTextBox" TextWrapping="Wrap" Text="" Margin="8,360,133,13"/>
+        
     </Grid>
 </Window>

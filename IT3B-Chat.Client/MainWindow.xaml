@@ -6,7 +6,24 @@
         xmlns:local="clr-namespace:IT3B_Chat.Client"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+
+    <Grid Background="DarkCyan">
+        <Border Background="Aquamarine" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="43" VerticalAlignment="Top" Width="802"/>
+
+        <Border Grid.Row="0"  BorderThickness="1" Margin="-12,10,-1,1" Padding="10">
+            <StackPanel Margin="1,1,-10,-11">
+                <TextBlock Text="Zprávy" FontWeight="Bold" Width="794"/>
+
+
+            </StackPanel>
+        </Border>
+        <ListBox x:Name="MessagesListBox" Height="302" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="3,49,6,83"/>
+        <Button x:Name="msgBtn" Content="Poslat zprávu" Margin="428,361,258,15" Click="msgBtn_Click"/>
+        <TextBox x:Name="NewMessageTextBox" TextWrapping="Wrap" Text="" Margin="8,360,379,13"/>
+        <TextBox x:Name="ServerAddressTextBox" Margin="550,375,147,13"/>
+        <TextBlock Text="Adresa serveru:" FontWeight="Bold" Margin="549,358,152,54"/>
+        <Button Content="Připojit" Click="ConnectButton_Click" Margin="658,373,75,12"/>
+        <Button Content="Odpojit" Click="DisconnectButton_Click" Margin="728,373,5,10"/>
 
     </Grid>
 </Window>
