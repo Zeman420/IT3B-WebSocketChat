@@ -21,6 +21,11 @@ namespace IT3B_Chat.Server
             InitializeComponent();
         }
 
-
+        private void msgBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string newMessage = NewMessageTextBox.Text;
+            MessagesListBox.Items.Add(newMessage);
+            NewMessageTextBox.Text = "";
+        }
     }
 }
