@@ -6,21 +6,18 @@
         xmlns:local="clr-namespace:IT3B_Chat.Server"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBlock Text="Zprávy od klientů" FontWeight="Bold" RenderTransformOrigin="0.491,8.684"/>
-        <Border Grid.Row="0" BorderBrush="Gray" BorderThickness="1" Margin="15,24,5,-4" Padding="10">
-            <StackPanel>
+    <Grid Background="DarkCyan">
+        <Border Background="Aquamarine" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="43" VerticalAlignment="Top" Width="802"/>
 
-                <ListBox x:Name="MessagesListBox" Height="200" Width="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <Border Grid.Row="0"  BorderThickness="1" Margin="-12,10,-1,1" Padding="10">
+            <StackPanel Margin="1,1,-10,-11">
+                <TextBlock Text="Zprávy od klientů" FontWeight="Bold" Margin="0 0 0 10"/>
+
             </StackPanel>
         </Border>
-
-
-        <Border BorderBrush="Gray" BorderThickness="1" Margin="15,24,5,-4" Padding="10">
-            <StackPanel>
-                <TextBlock Text="Události připojení/odpojení klientů" FontWeight="Bold"/>
-                <ListBox x:Name="EventsListBox" Height="200" Width="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-            </StackPanel>
-        </Border>
+        <ListBox  Margin="628,49,7,81"/>
+        <ListBox x:Name="MessagesListBox" Height="302" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="3,49,186,83"/>
+        <Button Content="Poslat zprávu" Margin="677,361,9,15"/>
+        <TextBox TextWrapping="Wrap" Text="" Margin="8,360,130,13"/>
     </Grid>
 </Window>
